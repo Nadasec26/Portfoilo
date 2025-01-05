@@ -1,0 +1,62 @@
+header ul li a{
+    color: var(--title);
+    font-size: 0.88rem;
+}
+header ul li a:hover{
+    color: var(--blue);
+    font-size: 0.9rem;
+}
+header button{
+    font-size: 1.2rem;
+}
+button:active{
+    scale: 0.9;
+}
+header.flex nav{
+    background-color: var(--bgheader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 40px #2323242a;
+}
+header .mode, header .icon-menu {
+    background-color: var(--bgHeader);
+    color: var(--subtitle);
+    border: 1px solid rgb(244, 165, 96,0.249);
+    transition: 0.2s;
+}
+header .mode:hover, header .icon-menu:hover {
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 96);
+}
+header .icon-wb_sunny{
+    color: orange;
+}
+@media (max-width:700px) {
+    header nav {
+        display: none;
+    }
+    header .menu {
+        display: block;
+    }
+}
+header .fixed {
+    inset: 0;
+    background-color: rgb(40, 40, 48,0.7);
+    z-index: 11;
+}
+@keyframes mymove {
+    0% {scale: 0;}
+    60% {scale: 1.2;}
+    100% {scale: 1;}
+}
+header .fixed ul.model {
+    animation: mymove 0.7s 1;
+    width: 85%;
+    background-color: var(--primary);
+}
+header .fixed ul.model li {
+    border-bottom: 1px solid var(--border);
+}
+header .fixed ul.model li:first-child {
+    border: none;
+}
